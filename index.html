@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Management Agent</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0; 
+            background-color: #ffffff;
+            color: #333; 
+            display: flex;
+            flex-direction: column; 
+        }
+
+        header {
+            text-align: center;
+            padding: 10px 0; 
+            background-color: #1565c0; 
+            color: white;
+            font-size: 23px; 
+            position: fixed; 
+            width: 100%; 
+            z-index: 1000; 
+        }
+
+        nav {
+            background-color: #1565c0; 
+            overflow: hidden;
+            text-align: left; 
+            position: fixed; 
+            width: 150px; 
+            height: 100%; 
+            margin-top: 50px; 
+        }
+
+        nav a {
+            display: block; 
+            color: white;
+            text-align: center;
+            padding: 20px 16px; 
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #42a5f5; 
+            color: white;
+        }
+
+        nav a.active {
+            background-color: #42a5f5; 
+            color: white;
+        }
+
+        main {
+            margin-top: 90px; 
+            margin-left: 150px; 
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        h2 {
+            color: #e53935; 
+            font-size: 28px; 
+        }
+
+        .panel {
+            background-color: #f4f4f4; 
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .agent-profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .agent-profile img {
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .property-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+        }
+
+        .property-list li {
+            width: 30%; 
+            margin-bottom: 20px;
+            background-color: #fff; 
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center; 
+        }
+
+        .property-image {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s; 
+        }
+
+        .property-list li:hover .property-image {
+            transform: scale(1.1); 
+        }
+
+        a {
+            color: #e53935; 
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #1565c0;
+  color: white;
+}
+    </style>
+</head>
+<body>
+    <header>
+        Real Estate Management
+    </header>
+
+    <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#services">About Us</a>
+	<a href="#properties">Properties</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="home" class="panel">
+            <h2>Home</h2>
+            <p>🌟 Welcome to Meruzo Estates: Elevating Your Real Estate Experience 🌟</p>
+<p>At Meruzo Estates, we invite you to embark on a journey where extraordinary living meets unparalleled excellence. As you step into our world of real estate, you are greeted by a fusion of innovation, integrity, and a commitment to crafting spaces that transcend the ordinary.</p>
+
+            <p>Whether you're seeking a dream residence or exploring strategic investment opportunities, Meruzo Estates welcomes you. Let us guide you through a world where each property is a masterpiece, and every moment is an investment in a future of extraordinary living.
+
+Discover the Meruzo difference—where every detail matters, and every space tells a story.</p>
+
+<p><b>Integrity and Transparency</b><br> Trust is the cornerstone of every successful real estate journey. Meruzo Estates upholds the highest standards of integrity and transparency, ensuring a seamless and trustworthy experience for our clients.</p>
+<p><b>Investment Opportunities</b> <br>Beyond building homes, we open doors to investment possibilities. Meruzo Estates provides comprehensive market insights, empowering you to make informed decisions that yield long-term returns.</p>
+<p><b>Achievements</b><br>In just one year, Meruzo Estates has achieved milestones that echo our commitment to excellence. Our projects stand as testaments to the fusion of innovation, quality, and a client-focused approach that defines the Meruzo experience.</p>
+
+	
+
+        </section>
+
+        <section id="services" class="panel">
+            <h2>About US</h2>
+            <p>Meruzo Estates, a beacon of sophistication in the real estate industry, stands proudly at the intersection of timeless design and modern living. Established with a vision to redefine the art of living, our company celebrates its one-year milestone with a portfolio of distinctive residential and commercial projects that embody our core values.</p>
+        </section>
+
+	
+
+        <section id="properties" class="panel">
+            <h2>Available Properties</h2>
+            <ul class="property-list">
+                <li>
+                 <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/379669412_972078543866340_2348321028892568678_n.jpg?stp=dst-jpg_s206x206&_nc_cat=109&ccb=1-7&_nc_sid=510075&_nc_eui2=AeFKGAgxKdsmvfinE8lO86QngGfhiDWWv86AZ-GINZa_zpiB7HqATfJ0hNzAG6CUhTLocXyI90IbKf8gy1QQLJnV&_nc_ohc=Z6gcs-XQ4GkAX9ik0mA&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSHzSGT5cx9nrVos70ke8kZb2okY8ybSy-UHS3WELW2AQ&oe=659A6B1D" alt="Property 1" class="property-image">
+                    <p>Verde Townhouse.</p>
+                    <p>Location: NextAsia,Brgy.Latag, Lipa CIty</p>
+                    <p>Starting Price: Php. 1,700,000</p>
+                </li>
+		<li>
+                 <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/357130022_2777131865769056_7894688587158192410_n.jpg?stp=dst-jpg_s350x350&_nc_cat=110&ccb=1-7&_nc_sid=510075&_nc_eui2=AeEa0mvF2Ez8AAdRzqrUuVo_Qfs5SSSLz4VB-zlJJIvPhXvcqZUsRmz2eYVk6HYCk06Io9e3H6y5ZIZ17c4gxuBz&_nc_ohc=9JvXWy4TTrMAX_IIySS&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSeKAK3G4aXvEnkOyBO6qtx2bF6U_hbzXMtnhAd8oPlLQ&oe=659A8B70" alt="Property 1" class="property-image">
+                    <p>Azul - Single Attached.</p>
+                    <p>Location: NextAsia,Brgy.Latag, Lipa CIty</p>
+                    <p>Starting Price: Php. 2,200,000</p>
+                </li>
+<li>
+                 <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/403398633_385615383829382_5627643697217377831_n.jpg?stp=dst-jpg_p206x206&_nc_cat=107&ccb=1-7&_nc_sid=510075&_nc_eui2=AeE-FStuFUcq6X0XT5ajnRHFC4HNDlIMvkkLgc0OUgy-SX76I4saBDahF1jgtKx4GgiPKvxsvKLUWQ1U_Y4lXCcH&_nc_ohc=q86mhKWsaaoAX-88BYS&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRLctrmxD26zpZF1_dSl6N8hTarlwVvyTvWO7C08B20cQ&oe=659AAC4B" alt="Property 1" class="property-image">
+                    <p>Single Attached Unit , Modern Asian Style</p>
+                    <p>Location: Sentrina Subd, Brgy,Latag,Lipa City</p>
+                    <p>Starting Price: Php. 4,500,000</p>
+                </li>
+<li>
+                 <img src="https://scontent.fmnl25-3.fna.fbcdn.net/v/t1.15752-9/387505440_372303328492887_8126111443393297759_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeFd8giSMneE2O-ja_DIhVpQOjishsH-Ft86OKyGwf4W3xR25sWepL1uNJEy5Pc19WMs1Hj7K62y1EcUMEwQPs5k&_nc_ohc=3CrNCK5uspcAX_ChB1R&_nc_ht=scontent.fmnl25-3.fna&oh=03_AdTDo-TNPIlMVTNrrode5nxC-ICdGRwlU1tSuVFBuYW0qg&oe=659A9537" alt="Property 1" class="property-image">
+                    <p>Betinha-120 sqm Floor area</p>
+                    <p>Location: Sentrina Subd, Brgy,Latag,Lipa City</p>
+                    <p>Starting Price: Php. 4,500,000</p>
+                </li>
+<li>
+                 <img src="https://scontent.fmnl25-3.fna.fbcdn.net/v/t1.15752-9/372303374_1099060154786210_5318501282779379138_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeGhv7qapTuqIX9tkM0R690n-dOvDI8Rpbr5068MjxGluhGIiTjq1FnlBhAofmP1yVCuahBaZNwguDC38B6ZhjqF&_nc_ohc=p9huhniirowAX9wmUSY&_nc_ht=scontent.fmnl25-3.fna&oh=03_AdRe-pUM2CDyRAzQEFTssrraa7zdaHFRq1IokoWcqWvk-g&oe=659A88FE" alt="Property 1" class="property-image">
+                    <p>Tiffany-110 sqm Floor area</p>
+                    <p>Location: Sentrina Subd, Brgy,Latag,Lipa City</p>
+                    <p>Starting Price: Php. 4,500,000</p>
+                </li>
+<li>
+                 <img src="https://scontent.fmnl25-3.fna.fbcdn.net/v/t1.15752-9/403592600_2084831071859766_6869542335674669857_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHHjxctuZ4G8nmlqOWqS8bo3TCQuOLKn7_dMJC44sqfvzjMG86y4iNiVE5IFHokbzao_gUNRyqaCNT9ZvuCDnZc&_nc_ohc=Hfd3_3j3ErQAX-hnSdk&_nc_oc=AQlNa9R5RMZlylQpwjkwnsAoVLaBy9aGFXM_2yfm_N6VzoLV7hgKRIyu_ewofYjRqfo&_nc_ht=scontent.fmnl25-3.fna&oh=03_AdSnxn3pBIJwTXHhY_1XxEazM9qAlJKMT71cn4uwn85V5g&oe=659A99FE" alt="Property 1" class="property-image">
+                    <p>Elyssia-135 sqm Floor area</p>
+                    <p>Location: Sentrina Subd, Brgy,Latag,Lipa City</p>
+                    <p>Starting Price: Php. 5,000,000</p>
+                </li>
+<li>
+                 <img src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t1.15752-9/403603282_897093321760777_8310751389185920281_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHPNPPnUf6zJiFS0J9jMJmL2HQNYnmk1vrYdA1ieaTW-jPzTMrTJmq7YGVSeBCv9xFn70Un7arynWWywwE23TEd&_nc_ohc=dEHEeaLkBYkAX_cXj8-&_nc_ht=scontent.fmnl25-1.fna&oh=03_AdT-YSxsEsqCTFX4TEqAlIjfGjSxnuuFrmm5s7YQtstufA&oe=659AA117" alt="Property 1" class="property-image">
+                    <p>Alisha-80 sqm Floor area</p>
+                    <p>Location: Sentrina Subd, Brgy,Latag,Lipa City</p>
+                    <p>Starting Price: Php. 6,000,000</p>
+                </li>
+
+              
+ 
+                
+
+            </ul>
+        </section>
+
+        <section id="contact" class="panel">
+            <h2>Contact Us</h2>
+            <!-- Add a contact form or contact information here -->
+            <div class="agent-profile">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/403394780_1383914942520179_7635809712061836592_n.jpg?stp=dst-jpg_s206x206&_nc_cat=109&ccb=1-7&_nc_sid=510075&_nc_eui2=AeFuo0W6I-M7FFaeC4SVOPjUBP0voJzOLSAE_S-gnM4tIBZjG9p1q223Zijsj5kZ1e_sKVpqf2q-3GuYolXmlM_N&_nc_ohc=H4WegK8OpZUAX9EO76b&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRId0cGDOQw7v6wdhKuzSMzcPgZJboU5dw_Tn-nl_OhUw&oe=65A21AC3" alt="Agent Name" width="120"  height="120">
+                <div>
+                    <p>Contact our dedicated agent for personalized assistance:</p>
+                    <p><strong>Chona Mercado Baruzo</strong></p>
+                    <p>Email: <a href="mailto:chonamercado2004@gmail.com">chonamercado2004@gmail.com</a></p>
+                    <p>Phone: <a href="tel:09665289635">09665289635</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>🏡✨ Elevate your living with Meruzo Estates. ✨🏡</p>
+    </footer>
+
+    <script>
+        // Add smooth scrolling to anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Remove active class from all links
+                document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
+
+                // Add active class to the clicked link
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
